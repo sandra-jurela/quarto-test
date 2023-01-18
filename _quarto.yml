@@ -15,9 +15,5 @@ format:
     theme: simplex
     css: styles.css
     
-comments:
-  giscus:
-    repo: sandra-jurela/quarto-test
-
 editor: visual
 
