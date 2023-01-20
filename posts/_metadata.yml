@@ -5,8 +5,24 @@
 freeze: true
 
 # Enable banner style title blocks
-title-block-banner: true
+title-block-banner: true   # true adds more space
 
-comments:
-  giscus:
-    repo: sandra-jurela/quarto-test
+# Author name of all blog posts
+author: 'Sandra Jurela'
+
+# table of contents
+toc: true
+toc-title: Table of Contents
+toc-location: right
+toc-depth: 3
+
+# fig
+fig-cap-location: bottom
+
+# knitr options
+execute:
+  echo: true
+  message: false
+  warning: false
+
+page-layout: article

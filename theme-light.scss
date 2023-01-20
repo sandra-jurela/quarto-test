@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
 // use litera as the base
-$theme: "simplex" !default;
+$theme: "litera" !default;
 
 // import google fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato');
@@ -22,15 +22,76 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// my colors
+$my-pink: #FF00FF;
+$my-blue: #31bae9;  
+$my-link-blue: #0071BC; // #0077b5; 
+$my-cyan: #31BAE9;
+$my-magenta: #E83E8C;
+$violet: #9753B8;
+$my-heart: #72cbe8;
+
+$primary:       $violet  !default;
+
 // use Lato font if available
 $font-family-sans-serif:  "Segoe UI", -apple-system, BlinkMacSystemFont, "Calibri", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 $font-family-base:  'Segoe UI',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
 $body-color: $gray-900 !default;
-$headings-font-family:  'Akata', 'Roboto', 'Playfair Display', 'Montserrat'    !default;
+$headings-font-family:  'Alata', 'Open Sans', 'Roboto', 'Playfair Display', 'Montserrat'    !default;
+$headings-font-weight:   300;    //keep this!
 
-// link colour
-$link-color: #0071BC;  // #75AADB;
+
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-shadows:              false !default;
+$enable-smooth-scroll:        true !default;
+
+// Links
+$link-color:              $my-link-blue  !default;  
+$link-decoration:         none !default;
+$link-hover-decoration:   underline !default;
+
+// Code
+$code-bg:                 $gray-100 !default;  
+// $code-color:              $my-magenta !default;
+
+// Code Blocks
+$code-block-bg:           $gray-100 !default;
+$code-block-border-left:  #31BAE9 !default;
+$code-block-border-left-size: 3px !default;
+$code-block-padding-left: -0.1em !default;
+$code-block-bg-padding:   0.7em !default;
+
+// Table of Contents
+//$toc-color:               $red !default;
+
+// Navnar
+$navbar-hl:                   $my-pink !default;  // #e066ff MediumOrchid1
+$sidebar-fg:                  $gray-800 !default;
+$navbar-dark-hover-color:     #9753B8 !default;
+$navbar-light-hover-color:    #9753B8 !default;
+
+// paragraph
+$paragraph-margin-bottom:     1.0rem !default;  /* default is 1rem*/
+
+$spacer: 1rem !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$h1-font-size:                $font-size-base * 2.0 !default;
+
 
 
 /*-- scss:rules --*/
@@ -45,21 +106,36 @@ p {
 // Navs
 
 .navbar-brand {
-  font-family: "Alata", sans-serif;
+  font-family: "Alata"; 
   font-size: 1.0rem;
   font-weight: 400;
-  color: black;
-  text-shadow: none;
+  color: #000;
 }
 
 // Navbar
 
 .navbar {
-  font-family: "Alata", sans-serif;
+  font-family: "Alata";
   font-size: 1.0rem;
   font-weight: 400;
-  text-shadow: none;
+  color: #000;
 }
 
-$navbar-dark-hover-color:           "#FF00FF" !default;
-$navbar-light-hover-color:          "#FF00FF" !default;
+h5.quarto-listing-category-title {
+  font-family: "Segoe UI";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+// Logo padding - keep
+a.navbar-brand.navbar-brand-logo {
+  margin-right: 15px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark {
+  margin-bottom: 20px;
+}
+
+
+
+

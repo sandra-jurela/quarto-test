@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sjurela.netlify.app/about.html</loc>
+    <lastmod>2023-01-20T15:21:01.710Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjurela.netlify.app/index.html</loc>
+    <lastmod>2023-01-20T15:23:18.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjurela.netlify.app/posts/first-try/post..html</loc>
+    <lastmod>2023-01-20T15:23:19.645Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjurela.netlify.app/posts/post-with-code/index.html</loc>
+    <lastmod>2023-01-20T15:16:12.800Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sjurela.netlify.app/posts/welcome/index.html</loc>
+    <lastmod>2023-01-20T15:16:13.136Z</lastmod>
+  </url>
+</urlset>
