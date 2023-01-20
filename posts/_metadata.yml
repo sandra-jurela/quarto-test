@@ -25,4 +25,8 @@ execute:
   message: false
   warning: false
 
+comments:
+  giscus:
+    repo: sandra-jurela/quarto-test
+
 page-layout: article
